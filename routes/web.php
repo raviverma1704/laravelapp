@@ -8,7 +8,9 @@ Route::get('/', function () {
 });
 
 
-
+Route::get('/test', function () {
+    return view('testpage');
+});
 
 // API routes grouped with a prefix and middleware
 Route::prefix('api')->group(function () {
