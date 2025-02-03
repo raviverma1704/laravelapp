@@ -8,9 +8,15 @@ Route::get('/', function () {
 });
 
 
+
+
 // API routes grouped with a prefix and middleware
 Route::prefix('api')->group(function () {
     Route::post('/post/create', [PostController::class, 'createPost']);
     Route::get('/post/list', [PostController::class, 'getPosts']);
+
+    Route::get('/test', function () {
+        return "Hello World!!!";
+    });
 });
 
