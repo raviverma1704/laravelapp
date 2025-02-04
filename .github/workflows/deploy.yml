@@ -23,4 +23,4 @@ jobs:
       - name: Deploy to Vapor Staging
         run: vapor deploy staging
         env:
-          VAPOR_API_TOKEN: ${{ secrets.VAPOR_API_TOKEN }}
+          VAPOR_API_TOKEN: ${{ secrets.LARAVEL_VAPOR_CI_TOKEN }}
