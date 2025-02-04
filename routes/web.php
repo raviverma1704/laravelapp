@@ -20,5 +20,10 @@ Route::prefix('api')->group(function () {
     Route::get('/test', function () {
         return "Hello World!!!";
     });
+
+
+    Route::get('/check-deploy', function () {
+        return "Code deployed to server!!";
+    });
 });
 
