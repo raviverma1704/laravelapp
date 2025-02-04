@@ -23,7 +23,7 @@ Route::prefix('api')->group(function () {
 
 
     Route::get('/check-deploy', function () {
-        return "Code deployed to server!!";
+        return "Code deployed to staging server!!";
     });
 });
 
