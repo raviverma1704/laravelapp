@@ -12,6 +12,10 @@ Route::get('/test', function () {
     return view('testpage');
 });
 
+Route::get('/checkenv', function () {
+    return env('MY_VAR');
+});
+
 // API routes grouped with a prefix and middleware
 Route::prefix('api')->group(function () {
     Route::post('/post/create', [PostController::class, 'createPost']);
