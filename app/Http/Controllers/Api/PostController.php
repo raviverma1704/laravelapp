@@ -48,7 +48,6 @@ class PostController extends Controller
                     } else {
                         return Post::get()->toArray(); // Fetch posts from the database
                     }
-                    
                 });
                 Log::info('Data fetched from database');
             }
@@ -66,7 +65,6 @@ class PostController extends Controller
             //     ->header('Expires', now()->addMinutes(5)->toRfc7231String());
 
         } catch (\Exception $e) {
-            dd($e);
             return response()->json(['message' => "Something went wrong.", 'status' => 500, 'desc' => $e->getMessage()]);
         }
     }
